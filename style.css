@@ -15,7 +15,7 @@
     font-family: 'Chirp';
     src: url('fonts/Chirp-Regular.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal 
+    font-style: normal;
     font-display: swap;
 }
 
@@ -23,7 +23,7 @@
     font-family: 'Chirp';
     src: url('fonts/Chirp-Medium.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal 
+    font-style: normal;
     font-display: swap;
 }
 
@@ -31,7 +31,7 @@
     font-family: 'Chirp';
     src: url('fonts/Chirp-Bold.woff2') format('woff2');
     font-weight: 700;
-    font-style: normal 
+    font-style: normal;
     font-display: swap;
 }
 
@@ -39,70 +39,108 @@
     font-family: 'Chirp';
     src: url('fonts/Chirp-Heavy.woff2') format('woff2');
     font-weight: 800;
-    font-style: normal font-display: swap;
+    font-style: normal;
+    font-display: swap;
 }
-
-
 
 body {
     font-family: 'Chirp';
-    margin: 10px;
+    margin: 50px;
     padding: 20px;
     background-color: white;
+    line-height: 2;
 }
 
 .wrapper {
     display: flex;
+
 }
 
 .left-container {}
 
 .img {
-    width: 150px;
+    width: 280px;
+    margin: 82px;
+    padding: 16px;
 }
 
 .right-container {
-    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
 }
 
-.text-section {}
+.text-section {
+    line-height: 100px;
+    text-align: left;
+}
 
-.sign-in-buttons {}
+.sign-in-buttons {
+   
+}
 
 .google-btn {
-    font-size: rem;
-    margin: 10px;
-    padding: 10px;
-    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 8px;
+    font-family: 'Chirp', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
     background-color: white;
-    border-radius: 40px;
-    border: 1px solid #eef1f4;
+    border: 1px solid #dbdce0;
+    border-radius: 9999px;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .google-btn:hover {
     background-color: #f1f5ff;
 }
 
+.google-btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
 .apple-btn {
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 8px;
+    font-family: 'Chirp',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
     padding: 10px;
-    border-style: none;
     background-color: white;
-    border-radius: 40px;
-    border: 1px solid #eef1f4;
+    border-radius: 9999px;
+    border: 1px solid #dbdce0;
+    align-items: center;
+    width: 300px;
+    height: 40px;
 }
 
 .apple-btn:hover {
     background-color: #e6e6e6;
 }
 
+.apple-logo-icon{
+    width: 20px;
+    height: 20px;
+}
+
 .separator {
+    width: 300px;
     display: flex;
     color: black;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .separator::after,
@@ -112,7 +150,7 @@ body {
     border-bottom: 1px solid #eff3f4;
 }
 
-.separator:after {
+.separator::after {
     margin-left: 0.5em;
 }
 
@@ -121,15 +159,22 @@ body {
 }
 
 .create-account-btn {
+    font-family: 'Chirp',Arial, Helvetica, sans-serif;
+    font-weight: 500;
     margin: 10px;
     padding: 10px;
     color: white;
     border-style: none;
     background-color: #1d9bf1;
-    border-radius: 40px;
+    border-radius: 9999px;
     border: 1px solid #eef1f4;
     align-items: center;
     font-weight: 550;
+    align-items: center;
+    display: block;
+    width: 300px;
+    height: 40px;
+    font-size: 100%;
 }
 
 .create-account-btn:hover {
@@ -137,29 +182,62 @@ body {
 }
 
 .terms-conditions {
-    margin: 5px;
+    color: #546571;
+    margin: 10px;
+    line-height: 1;
+    font-size: 0.8rem;
 }
 
 .existing-account {
     margin-top: 50px;
+    line-height: 2;
+    font-size: 0.9rem;
+}
+
+h3{
+    padding-left: 15px;
 }
 
 .sign-in {
+    font-family: 'Chirp',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 100%;
     margin: 10px;
     padding: 10px;
     border-style: none;
     background-color: white;
     color: #1c8cd8;
-    border-radius: 40px;
-    border: 1px solid #eef1f4;
-    font-weight: 550;
+    border-radius: 9999px;
+    border: 1px solid #dbdce0;
+     align-items: center;
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
-.site-footer {}
+.sign-in:hover{
+    background-color: #ebf5fe;
+}
+
+.site-footer {
+   list-style: none;
+    padding: 0 15px; 
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .footer-links {
-    text-decoration: none;
-    color: #546571;
+    width: 100%;
+    padding: 5px;
+    margin-top: 100px;
+    font-size: 0.7rem;
+}
+
+.site-footer li{
+    margin:2px 5px;
 }
 
 a {
@@ -169,9 +247,23 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor:pointer
 }
 
 .terms {
     text-decoration: none;
     color: #1c8cd8;
+}
+
+.heading-one{
+    font-family: 'Chirp',Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.heading-two{
+    font-family: 'Chirp',Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
